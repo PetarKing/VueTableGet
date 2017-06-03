@@ -38,13 +38,6 @@ export default {
         console.log(err)
       })
     },
-    loadTest(){
-      axios.get('http://178.148.148.166:8080/test').then((response) => {
-        this.test= response.data;
-      }, (err) => {
-        console.log(err)
-      })
-    },
     sortBy: function (key) {
               if(key!=this.sortKey)  {
                 this.ascending[this.sortKey]=true;
@@ -89,7 +82,6 @@ export default {
   },
   created: function(){
     this.loadUsers();
-    this.loadTest();
     this.ascending = {};
   }
 
