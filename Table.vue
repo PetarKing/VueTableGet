@@ -87,7 +87,7 @@ export default {
 
 }
 </script>
-<style>
+<style scoped>
 tr.collapse.in {
   display:table-row;
 }
